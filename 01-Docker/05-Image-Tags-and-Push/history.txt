@@ -1,0 +1,34 @@
+  402  docker images
+  403  docker push myapache:v4
+  404  docker login
+  405  docker push myapache:v4
+  406  docker tag myapache:v4 amitvashist7/docker-and-kubernetes-ey-20-july-2024:v4
+  407  docker images
+  408  docker push amitvashist7/docker-and-kubernetes-ey-20-july-2024:v4
+  409  docker tag myapache:v3 amitvashist7/docker-and-kubernetes-ey-20-july-2024:v3
+  410  docker tag myapache:v2 amitvashist7/docker-and-kubernetes-ey-20-july-2024:v2
+  411  docker tag myapache:v1 amitvashist7/docker-and-kubernetes-ey-20-july-2024:v1
+  412  docker tag myapache:v4 amitvashist7/docker-and-kubernetes-ey-20-july-2024:latest
+  413  docker images
+  414  docker push amitvashist7/docker-and-kubernetes-ey-20-july-2024:latest
+  415  docker push amitvashist7/docker-and-kubernetes-ey-20-july-2024:v3
+  416  docker push amitvashist7/docker-and-kubernetes-ey-20-july-2024:v2
+  417  docker push amitvashist7/docker-and-kubernetes-ey-20-july-2024:v1
+  418  ls
+  419  docker kill $(docker ps -q)
+  420  docker rmi $(docker ps -aq)
+  421  docker rm $(docker ps -aq)
+  422  docker images
+  423  docker rmi $(docker image -q)
+  424  docker rmi $(docker images -q)
+  425  docker rmi $(docker images -q) --force
+  426  docker images
+  427  ls
+  428  docker logout
+  429  docker run -d amitvashist7/docker-and-kubernetes-ey-20-july-2024
+  430  docker images
+  431  docker ps
+  432  curl 172.17.0.2/info.html
+  433  docker pull amitvashist7/apache-ex4
+  434  docker login
+  435  docker pull amitvashist7/apache-ex4
