@@ -14,9 +14,9 @@
    93  kubectl api-resources
    
    94  kubectl proxy --address='0.0.0.0' --port=8081 --accept-hosts='^.*$' &
-   95  curl localhost/api 
-   96  curl localhost/apis 
-   97  curl localhost/api/v1
-   98  curl localhost/api/v1/nodes
-   99  curl localhost/api/v1/pods
+   95  curl localhost:8081/api 
+   96  curl localhost:8081/apis 
+   97  curl localhost:8081/api/v1
+   98  curl localhost:8081/api/v1/nodes
+   99  curl localhost:8081/api/v1/pods
 
