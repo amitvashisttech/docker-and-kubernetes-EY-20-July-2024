@@ -1,0 +1,22 @@
+
+   79  docker ps 
+   80  docker exec -it <container-id> bash 
+   81  cd /etc/kubernetes/
+   83  cd manifests/
+   84  ls
+   85  cat kube-apiserver.yaml 
+   86  vim kube-apiserver.yaml 
+   87  exit 
+
+   89  kubectl cluster-info
+   90  kubectl version
+   92  kubectl api-versions
+   93  kubectl api-resources
+   
+   94  kubectl proxy --address='0.0.0.0' --port=8081 --accept-hosts='^.*$' &
+   95  curl localhost/api 
+   96  curl localhost/apis 
+   97  curl localhost/api/v1
+   98  curl localhost/api/v1/nodes
+   99  curl localhost/api/v1/pods
+
