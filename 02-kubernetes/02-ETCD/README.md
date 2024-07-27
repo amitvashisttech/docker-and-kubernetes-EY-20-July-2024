@@ -7,7 +7,7 @@ kubectl get pods -n kube-system | grep -i  etcd
 
 ## Let explore ETCD POD
 ```
-kubectl exec -it etcd-master -n kube-system   -- /bin/sh
+kubectl exec -it etcd-k8s-control-plane -n kube-system   -- /bin/sh
 ```
 
 ## Check the ETCD Status
